@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IxMilia.Step", "IxMilia.Step\IxMilia.Step.csproj", "{7BEB4FB6-8A3E-4690-B06C-357130AB4226}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IxMilia.Step.Test", "IxMilia.Step.Test\IxMilia.Step.Test.csproj", "{078EDA8D-F0BB-4D60-A7BD-1782A9CF713C}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ExpressSchemaParser", "ExpressSchemaParser\ExpressSchemaParser.fsproj", "{8C5F22E5-94D7-468C-BA80-63D27A59E7C9}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ExpressSchemaParser.Test", "ExpressSchemaParser.Test\ExpressSchemaParser.Test.fsproj", "{3EDE780A-E973-4861-8538-A19AF2245352}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{078EDA8D-F0BB-4D60-A7BD-1782A9CF713C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{078EDA8D-F0BB-4D60-A7BD-1782A9CF713C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{078EDA8D-F0BB-4D60-A7BD-1782A9CF713C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C5F22E5-94D7-468C-BA80-63D27A59E7C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C5F22E5-94D7-468C-BA80-63D27A59E7C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C5F22E5-94D7-468C-BA80-63D27A59E7C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C5F22E5-94D7-468C-BA80-63D27A59E7C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EDE780A-E973-4861-8538-A19AF2245352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EDE780A-E973-4861-8538-A19AF2245352}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EDE780A-E973-4861-8538-A19AF2245352}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EDE780A-E973-4861-8538-A19AF2245352}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

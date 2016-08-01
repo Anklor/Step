@@ -9,10 +9,16 @@
     <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
     <SolutionDir>$(MSBuildThisFileDirectory)src</SolutionDir>
     <SolutionFile>$(SolutionDir)\IxMilia.Step.sln</SolutionFile>
-    <TestAssembly>$(SolutionDir)\Binaries\$(Configuration)\IxMilia.Step.Test.dll</TestAssembly>
+    <ProductTestAssembly>$(SolutionDir)\Binaries\$(Configuration)\IxMilia.Step.Test.dll</ProductTestAssembly>
+    <SchemaTestAssembly>$(SolutionDir)\Binaries\$(Configuration)\ExpressSchemaParser.Test.dll</SchemaTestAssembly>
     <NuGetDir>$(MSBuildThisFileDirectory)src\.nuget</NuGetDir>
     <NuGetExe>$(NuGetDir)\NuGet.exe</NuGetExe>
   </PropertyGroup>
+
+  <ItemGroup>
+    <TestAssemblies Include="$(SchemaTestAssembly)" />
+    <TestAssemblies Include="$(ProductTestAssembly)" />
+  </ItemGroup>
 
   <UsingTask TaskName="Xunit.Runner.MSBuild.xunit"
              AssemblyFile="src\packages\xunit.runner.msbuild.2.1.0\build\portable-net45+win8+wp8+wpa81\xunit.runner.msbuild.dll" />
@@ -58,7 +64,7 @@
   </Target>
 
   <Target Name="Test">
-    <xunit Assemblies="$(TestAssembly)" />
+    <xunit Assemblies="@(TestAssemblies)" />
   </Target>
 
   <Target Name="BuildAndTest"
