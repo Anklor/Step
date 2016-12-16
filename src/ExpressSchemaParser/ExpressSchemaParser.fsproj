@@ -10,7 +10,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>ExpressSchemaParser</RootNamespace>
     <AssemblyName>ExpressSchemaParser</AssemblyName>
-    <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
+    <TargetFSharpCoreVersion>4.4.1.0</TargetFSharpCoreVersion>
     <Name>ExpressSchemaParser</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' " />
